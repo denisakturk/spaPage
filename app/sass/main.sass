@@ -1,56 +1,3 @@
-// // .header__nav
-// //     margin-top: 20px
-
-// .nav
-//     display: flex
-//     align-items: flex-end
-//     // justify-content: space-around
-//     &__logo
-//         max-width: 110px
-
-// .logo-link
-//     max-width: 25%
-//     flex: 0 0 25%
-
-// .menu
-//     list-style-type: none
-//     display: flex
-//     max-width: 75%
-//     flex: 0 0 75%
-//     &__item:not(:last-child)
-//         margin-right: 30px
-//     &__link
-//         color: black
-//         text-decoration: none
-//         text-transform: uppercase
-//         font-size: 14px
-
-
-// .main__img
-//     width: 40%
-//     position: absolute
-//     top: 0
-//     right: 0
-//     z-index: -1
-
-// .greeting
-//     max-width: 547px
-//     &__heading
-//         font-size: 60px
-//         margin-bottom: 47px
-//     &__text
-//         margin-bottom: 55px
-//         line-height: 27px
-// .heading
-//     &__sub
-//         display: block
-//         font-size: 14px
-//         text-transform: uppercase
-//         color: #ff817e
-//         margin-bottom: 40px
-//         line-height: 72px
-//         letter-spacing: 1.5px
-
 *
     padding: 0
     margin: 0
@@ -90,22 +37,35 @@ h1, h2, h3, h4, h5, h6
 section
     display: block
     position: relative
-    padding: 50px 0
+    padding: 35px 0
     width: 100%
 
 header
     padding: 0 0 50px 0
 
+footer
+    background-color: #fff9f8
+    padding: 50px 0
+    text-align: center
+
 .btn
     display: inline-block
-    background-color: #ff817e
+    // background-color: #ff817e
+    background-color: #30383b
     padding: 20px 15px
-    font-size: 15px
+    font-size: 16px
     line-height: 0.8
     text-transform: uppercase
     color: #fff
     min-width: 170px
     text-align: center
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:hover
+        background-color: #ff817e
+        color: #212529
+
+.circle-btn
+    border-radius: 25px
 
 .wrapper
     max-width: 1140px
@@ -132,15 +92,6 @@ header
     display: block
     max-width: 109px
 
-// .flower1
-//     background-image: url(../img/flower1.png)
-//     background-repeat: no-repeat
-//     width: 412px
-//     height: 533px
-//     position: absolute
-//     left: -172px
-//     z-index: -1
-
 .main-bg
     width: 40%
     position: absolute
@@ -150,6 +101,7 @@ header
 
 .section-greeting
     background: url(../img/leaf.png) no-repeat left center / 12.5%
+    padding: 0 0 12% 0
 
 .greeting
     max-width: 50%
@@ -157,6 +109,7 @@ header
         color: #ff817e
         font-size: 15px
         line-height: 72px
+        letter-spacing: 1.5px
         text-transform: uppercase
     &__header
         font-size: 60px
@@ -169,5 +122,175 @@ header
         font-size: 15px
 
 .cta__btn
-    margin-right: 25px
+    margin-right: 55px
+    background-color: #ff817e
 
+.section-about
+    text-align: center
+
+.flower2
+    position: absolute
+    left: 16%
+    top: 0
+    max-width: 160px
+
+.flower3
+    position: absolute
+    right: 135px
+    top: 50%
+    max-width: 88px
+
+.section-heading
+    max-width: 85%
+    margin: 0 auto 45px
+    text-align: center
+    & img
+        max-width: 84px
+        margin: 0 auto 20px
+    &__sub
+        color: #888888
+        font-size: 20px
+        font-weight: 400
+        line-height: 54px
+        text-transform: uppercase
+        letter-spacing: 2px
+        margin-bottom: 15px
+    &__title
+        color: #1e2528
+        font-size: 42px
+        font-weight: 700
+        line-height: 55px
+        margin-bottom: 15px
+    & p
+        font-size: 15px
+        line-height: 28px
+
+.row
+    display: flex
+
+.article
+    // flex-basis: 33%
+    padding: 20px
+    border: 1px solid #e3e6ea
+    box-shadow: 0 15px 40px rgba(4, 10, 50, 0.1)
+    background-color: #ffffff
+    text-align: center
+    & img
+        margin-bottom: 15px
+    &__heading
+        margin-bottom: 10px
+    &__subtitle
+        color: #888
+        font-size: 12px
+        line-height: 30px
+        text-transform: uppercase
+        margin-bottom: 10px
+    &__title
+        font-size: 22px
+        font-weight: 700
+        line-height: 32px
+        color: #30383b
+    & p
+        color: #888888
+        font-size: 14px
+        font-weight: 300
+        line-height: 27px
+        margin-bottom: 15px
+    &__btn
+        padding: 15px
+        font-size: 16px
+    &:not(:last-child)
+        margin-right: 15px
+
+.section-testimonial
+     background-color: #fff9f8
+
+.owl-item
+    &__inner
+        width: 85%
+        margin: 0 auto
+        & img
+            max-width: 59px
+            margin: 0 auto 25px
+        & p
+            text-align: center
+            font-size: 18px
+            line-height: 35px
+            margin-bottom: 25px
+    &__info
+        & img
+            max-width: 76px
+        & p
+            font-size: 22px
+            font-weight: 400
+            line-height: 35px
+            color: #263a41
+
+.member
+    position: relative
+    &:not(:last-child)
+        margin-right: 15px
+    & img
+        z-index: -1
+    &-details
+        max-width: calc(100% - 60px)
+        margin: -50px auto 0
+        padding: 30px
+        text-align: center
+        box-shadow: 0 15px 30px rgba(48, 56, 59, 0.1)
+        background-color: #ffffff
+        position: relative
+        z-index: 1
+        &__title
+            font-size: 22px
+            line-height: 27px
+            margin-bottom: 5px
+        &__subtitle
+            font-size: 15px
+            line-height: 27px
+
+
+.contact__item
+    &:first-child
+        flex-basis: 40%
+    &:nth-child(2)
+        flex-basis: 55%
+
+.contact-form, .addresses-list
+    display: flex
+    flex-direction: column
+
+.addresses-list__item
+    display: flex
+    align-items: center
+    margin-bottom: 25px
+    & img
+        max-width: 50px
+        margin-right: 15px
+
+.contact-form
+    width: 85%
+    margin: 0 auto
+    &__input, &__area
+        border: 1px solid #e3e6ea
+        background-color: #ffffff
+        padding-left: 10px
+        padding-top: 15px
+    &__input
+        margin-bottom: 10px
+        padding: 15px 10px
+    &__area
+        margin-bottom: 15px
+        // padding-top: 16px
+        padding-bottom: 50px
+    &__btn
+        width: 30%
+        padding: 15px 5px
+        font-size: 13px
+
+.ftr-menu
+    flex-direction: column
+    align-items: center
+    margin-bottom: 25px
+    &__logo
+        margin-bottom: 25px
