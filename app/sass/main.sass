@@ -56,10 +56,12 @@ footer
     color: #fff
     min-width: 170px
     text-align: center
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    &__active
+        background-color: #ff817e
     &:hover
         background-color: #ff817e
-        color: #212529
+        color: white
 
 .circle-btn
     border-radius: 25px
@@ -84,6 +86,9 @@ footer
         line-height: 45px
         padding: 0 20px
         font-size: 14px
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+        &:hover
+            color: #ff817e
 
 .logo__link
     display: block
@@ -330,6 +335,8 @@ footer
         margin-bottom: 0
     .contact__row
         flex-direction: column
+    .addresses-list__item
+        justify-content: center
 @media screen and (max-width: 540px)
     h1, h2, h3, h4, h5, h6
         text-align: center
@@ -340,13 +347,33 @@ footer
     .menu__logo
         margin: 0 auto
         flex: 0 0 100%
-    .greeting
+    .section-greeting
         background: none
+        padding: 2% 0 12% 0
+    .section-heading
+        margin: 0 auto 20px
+    .greeting
         text-align: center
+        &__header
+            font-size: 42px
+            margin-bottom: 10px
         &__cta
             display: flex
             flex-direction: column
-            max-width: 60%
+            max-width: 50%
             margin: 0 auto
+        &__text
+            margin-bottom: 30px
     .cta__btn
         margin: 0 0 20px 0
+    .owl-item
+        &__inner
+            width: 100%
+            & img
+                max-width: 36px
+        &__info img
+            max-width: 59px
+    .contact-form
+        width: 100%
+        &__btn
+            margin: 0 auto
