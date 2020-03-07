@@ -242,22 +242,22 @@ footer {
 .section-testimonial {
   background-color: #fff9f8; }
 
-.owl-item__inner {
+.carousel__item__inner {
   width: 85%;
   margin: 0 auto; }
-  .owl-item__inner img {
+  .carousel__item__inner img {
     max-width: 59px;
     margin: 0 auto 25px; }
-  .owl-item__inner p {
+  .carousel__item__inner p {
     text-align: center;
     font-size: 18px;
     line-height: 35px;
     margin-bottom: 25px; }
 
-.owl-item__info img {
+.carousel__item__info img {
   max-width: 76px; }
 
-.owl-item__info p {
+.carousel__item__info p {
   font-size: 22px;
   font-weight: 400;
   line-height: 35px;
@@ -406,7 +406,8 @@ footer {
   h1, h2, h3, h4, h5, h6 {
     text-align: center; }
   header {
-    padding-top: 10px; }
+    padding-top: 10px;
+    background: #fff9f8; }
   .wrapper {
     max-width: 480px; }
   .menu__logo {
@@ -416,10 +417,10 @@ footer {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .section-greeting {
-    background: none;
+    background: #fff9f8;
     padding: 2% 0 12% 0; }
   .section-heading {
-    margin: 0 auto 20px; }
+    margin: 0 auto 15px; }
   .greeting {
     text-align: center; }
     .greeting__header {
@@ -441,11 +442,11 @@ footer {
       margin-bottom: 30px; }
   .cta__btn {
     margin: 0 0 20px 0; }
-  .owl-item__inner {
+  .carousel__item__inner {
     width: 100%; }
-    .owl-item__inner img {
+    .carousel__item__inner img {
       max-width: 36px; }
-  .owl-item__info img {
+  .carousel__item__info img {
     max-width: 59px; }
   .contact-form {
     width: 100%; }
